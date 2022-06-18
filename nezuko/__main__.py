@@ -97,10 +97,10 @@ async def start_bot():
 home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="Commands ❓", callback_data="bot_commands"),
+            InlineKeyboardButton(text="Commands ✅", callback_data="bot_commands"),
             InlineKeyboardButton(
-                text="Repo ❤️",
-                url="https://github.com/rozari0/NezukoBot",
+                text="Group 🇧🇩",
+                url="https://t.me/Vvip_BD",
             ),
         ],
         [
@@ -129,12 +129,12 @@ keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Help ❓",
+                text="Help 😪",
                 url=f"t.me/{BOT_USERNAME}?start=help",
             ),
             InlineKeyboardButton(
-                text="Repo 🛠",
-                url="https://github.com/rozari0/NezukoBot",
+                text="Group 🇧🇩",
+                url="https://t.me/vvip_bd",
             ),
         ],
         [
@@ -151,7 +151,7 @@ keyboard = InlineKeyboardMarkup(
 async def start(_, message):
     if message.chat.type != enums.ChatType.PRIVATE:
         return await message.reply_photo(
-            photo="https://cdn.awwni.me/2gj9h.jpg",
+            photo="https://i.ibb.co/b69QsCx/images-22.jpg",
             caption="Pm Me For More Details.",
             reply_markup=keyboard,
         )
@@ -176,7 +176,7 @@ async def start(_, message):
             )
     else:
         await message.reply_photo(
-            photo="https://cdn.awwni.me/2gj9h.jpg",
+            photo="https://i.ibb.co/b69QsCx/images-22.jpg",
             caption=home_text_pm,
             reply_markup=home_keyboard_pm,
         )
