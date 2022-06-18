@@ -28,19 +28,19 @@ from nezuko.core.decorators.errors import capture_err
 from nezuko.utils.http import get
 
 __MODULE__ = "Repo"
-__HELP__ = "/repo - To Get My Github Repository Link " "And Support Group Link"
+__HELP__ = "/repo - To Get My Channal" "And Support Group Link"
 
 
 @app.on_message(filters.command("repo"))
 @capture_err
 async def repo(_, message):
-    users = await get("https://api.github.com/repos/rozari0/NezukoBot/contributors")
+    users = await get("https://api.github.com/repos/imnoob-xd1/NezukoBot/contributors")
     list_of_users = "".join(
         f"**{count}.** [{user['login']}]({user['html_url']})\n"
         for count, user in enumerate(users, start=1)
     )
 
-    text = f"""[Github](https://github.com/rozari0/NezukoBot) | [Group](t.me/thecrowclub)
+    text = f"""[Channal](https://t.me/vvip_bd) | [Group](t.me/vvip_bd)
 ```----------------
 | Contributors |
 ----------------```
